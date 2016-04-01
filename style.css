@@ -4,7 +4,7 @@ Theme URI: http://lichifeng.com/goule
 Author: lichifeng
 Author URI: http://lichifeng.com/
 Description: Goule is a paper-like and responsive wordpress theme built with Bootstrap framework. It's designed with blog content always on the center-stage. Simple yet elegant structure gives it excellent compatibility with all kinds of screens. It comes with most basic elements a small blog site needs and nothing more. For those who complains about bloated and over-decorated web design now a days, this theme will be an answer.Goule is now delivered with English(US) and Simplified Chinese translations, more translations are welcomed. Live Demo and Detailed Documentations can be found at http://lichifeng.com/goule
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, white, one-column, fluid-layout, featured-image-header, featured-images, sticky-post
@@ -117,7 +117,7 @@ blockquote {
     border: 1px solid #aaa;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     margin: 20px auto 10px;
-    max-width: 820px;
+    max-width: 960px;
 }
 
 .site-footer {
@@ -225,7 +225,7 @@ header.row {
 }
 
 .entry-content {
-    line-height: 2;
+    line-height: 1.6;
 }
 
 .wp-pagenavi {

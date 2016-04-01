@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Goule\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-29 12:06+0800\n"
-"PO-Revision-Date: 2016-02-29 12:12+0800\n"
+"POT-Creation-Date: Thu Feb 25 2016 22:25:47 GMT+0800 (CST)\n"
+"PO-Revision-Date: Fri Apr 01 2016 14:01:56 GMT+0800\n"
 "Last-Translator: root <reg@patrick.com.cn>\n"
 "Language-Team: \n"
-"Language: zh_CN\n"
+"Language: Chinese (China)\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
@@ -18,252 +18,13 @@ msgstr ""
 "_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
 "esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: zh_CN\n"
-"X-Poedit-SearchPath-0: .\n"
-
-#. Name of the template
-msgid "Archives"
-msgstr "档案"
-
-#: /archive.php:20
-msgid "Browse by Tags"
-msgstr "按标签浏览"
-
-#: /archive.php:51
-msgid "Browse by Categorys"
-msgstr "按分类浏览"
-
-#: /archive.php:74
-#, php-format
-msgid "View all posts in %s"
-msgstr "查看 %s 中的所有内容"
-
-#: /archive.php:94
-msgid "Browse by Date"
-msgstr "按日期浏览"
-
-#: /archive.php:118
-msgid "Page list"
-msgstr "页面列表"
-
-#: /archive.php:147
-msgid "Attachment list"
-msgstr "附件列表"
-
-#: /searchform.php:3
-msgid "Search"
-msgstr "搜索"
-
-#: /content-none.php:3
-msgid "Nothing Found"
-msgstr "没找到符合要求的内容"
-
-#: /content-none.php:9
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "准备好发布你的第一篇博客了吗？<a href=\"%1$s\">点击这里开始</a>。"
-
-#: /content-none.php:15
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr "对不起，没有符合条件的搜索结果。请重试或尝试其它关键字进行搜索。"
-
-#: /content-none.php:20
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr "您请求的内容似乎不在这里，建议试一下搜索功能或许能找到。"
-
-#: /footer.php:5
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
-
-#: /footer.php:5
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "本站由%s驱动"
-
-#: /footer.php:7
-msgid "https://lichifeng.com/"
-msgstr "https://lichifeng.com/"
-
-#: /footer.php:7
-#, php-format
-msgid "Using %s theme"
-msgstr "使用%s主题"
-
-#: /content.php:6
-msgctxt "used before post titles"
-msgid "Featured"
-msgstr "置顶"
-
-#: /content.php:13
-msgctxt "used before post titles"
-msgid "Protected"
-msgstr "加密"
-
-#: /content.php:18
-msgctxt "used before post titles"
-msgid "Standard"
-msgstr "标准"
-
-#: /content.php:23
-msgid "aside"
-msgstr "日志"
-
-#: /content.php:27
-msgid "gallery"
-msgstr "相册"
-
-#: /content.php:31
-msgid "link"
-msgstr "链接"
-
-#: /content.php:35
-msgid "image"
-msgstr "图片"
-
-#: /content.php:39
-msgid "quote"
-msgstr "引用"
-
-#: /content.php:43
-msgid "status"
-msgstr "状态"
-
-#: /content.php:47
-msgid "video"
-msgstr "视频"
-
-#: /content.php:51
-msgid "audio"
-msgstr "音频"
-
-#: /content.php:55
-msgid "chat"
-msgstr "对话"
-
-#: /comments.php:13
-#, php-format
-msgctxt "comments title"
-msgid "One Comment"
-msgid_plural "%s Comments"
-msgstr[0] "%s条评论"
-
-#: /comments.php:22
-msgid "No comment yet"
-msgstr "暂无评论"
-
-#: /comments.php:35
-msgid "Name"
-msgstr "姓名"
-
-#: /comments.php:49
-msgid "Email"
-msgstr "邮箱"
-
-#: /comments.php:58
-msgid "Website"
-msgstr "网站"
-
-#: /comments.php:65
-#, php-format
-msgid "Required fields are marked %s"
-msgstr "带%s为必填"
-
-#: /comments.php:73
-msgctxt "noun"
-msgid "Comment"
-msgstr "评论"
-
-#: /comments.php:80
-msgid "Your email address will not be published."
-msgstr "邮箱地址不会被公布"
-
-#: /comments.php:84
-#, php-format
-msgid ""
-"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
-"this account\">Log out?</a>"
-msgstr ""
-"已登陆为<a href=\"%1$s\">%2$s</a>(<a href=\"%3$s\" title=\"退出登陆\">退出登"
-"陆</a>)"
-
-#: /comments.php:120
-msgid "Commenting on this post are closed"
-msgstr "评论功能被关闭"
-
-#: /functions.php:71
-msgid "Header Menu"
-msgstr "主菜单"
-
-#: /functions.php:90
-msgid "Continue to read the full content"
-msgstr "点击阅读全文"
-
-#: /functions.php:124
-msgctxt "Used between list items, there is a space after the comma."
-msgid ", "
-msgstr ", "
-
-#: /functions.php:129
-#, php-format
-msgid ""
-"Posted in: %4$s by <span class=\"author\">%1$s</span> <span class=\"posted-on"
-"\">%2$s</span> | Tags: %3$s"
-msgstr ""
-"由<span class=\"author\">%1$s</span>于<span class=\"posted-on\">%2$s</span>发"
-"布于：%4$s | 标签：%3$s"
-
-#. translators: 1: date, 2: time
-#: /functions.php:193
-msgid "(Edit)"
-msgstr "(编辑)"
-
-#: /functions.php:195
-msgid "Your comment is awaiting moderation."
-msgstr "该评论正待审核。"
-
-#: /functions.php:227
-msgid ""
-"This content is password protected. To view it please enter your password "
-"below:"
-msgstr "这是一篇采用了密码保护的内容。请在下方输入密码进行查看："
-
-#: /functions.php:228 /functions.php:231
-msgid "Password:"
-msgstr "密码："
-
-#: /functions.php:234
-msgid "Submit"
-msgstr "提交"
-
-#: /functions.php:270
-msgid "&laquo; Previous"
-msgstr "&laquo;"
-
-#: /functions.php:271
-msgid "Next &raquo;"
-msgstr "&raquo;"
-
-#: /functions.php:356
-msgid "(current)"
-msgstr "(当前页)"
-
-#: /index-nav.php:21
-msgid "Toggle navigation"
-msgstr "展开导航菜单"
-
-#. Name of the theme
-msgid "Goule"
-msgstr "Goule"
+"X-Poedit-SearchPath-0: ."
 
 #. Theme URI of the theme
-msgid "http://lichifeng.com/"
-msgstr "http://lichifeng.com/"
+msgid "http://lichifeng.com/goule"
+msgstr "http://lichifeng.com/goule"
 
 #. Description of the theme
 msgid ""
@@ -274,15 +35,251 @@ msgid ""
 "nothing more. For those who complains about bloated and over-decorated web "
 "design now a days, this theme will be an answer.Goule is now delivered with "
 "English(US) and Simplified Chinese translations, more translations are "
-"welcomed. Live Demo and Detailed Documentations can be found at http://"
-"lichifeng.com/"
+"welcomed. Live Demo and Detailed Documentations can be found at http:"
+"//lichifeng.com/goule"
 msgstr ""
-"Goule是一个像纸张一样简洁的响应式WordPress主题，它采用了当下流行的Bootstrap框"
-"架进行构建。它的设计和布局始终把内容放在首位，简洁优雅的结构使它能够出色的兼"
-"容于各种尺寸的屏幕。这个主题保留了一个小型博客站点应有的所有元素——并且没有任"
-"何多余的修饰。对于那些认为当下的主流WEB设计过于臃肿和浮夸的人来说，这个主题或"
-"许会让你耳目一新。Goule自带了英文和简体中文两种语言，当然也欢迎为它提供更多的"
-"翻译。Demo和详细的使用说明可以在这里找到：http://lichifeng.com/goule"
+"Goule是一个像纸张一样简洁的响应式WordPress主题，它采用了当下流行的Bootstrap框架进行构建。它的设计和布局始终把内容放在首位，简洁优雅"
+"的结构使它能够出色的兼容于各种尺寸的屏幕。这个主题保留了一个小型博客站点应有的所有元素——并且没有任何多余的修饰。对于那些认为当下的主流WEB设计过于臃肿"
+"和浮夸的人来说，这个主题或许会让你耳目一新。Goule自带了英文和简体中文两种语言，当然也欢迎为它提供更多的翻译。Demo和详细的使用说明可以在这里找到："
+"http://lichifeng.com/goule"
+
+#. Name of the template
+msgid "Archives"
+msgstr "档案"
+
+#: ../archive.php:20
+msgid "Browse by Tags"
+msgstr "按标签浏览"
+
+#: ../archive.php:51
+msgid "Browse by Categorys"
+msgstr "按分类浏览"
+
+#: ../archive.php:74
+#, php-format
+msgid "View all posts in %s"
+msgstr "查看 %s 中的所有内容"
+
+#: ../archive.php:94
+msgid "Browse by Date"
+msgstr "按日期浏览"
+
+#: ../archive.php:118
+msgid "Page list"
+msgstr "页面列表"
+
+#: ../archive.php:147
+msgid "Attachment list"
+msgstr "附件列表"
+
+#: ../comments.php:13
+#, php-format
+msgctxt "comments title"
+msgid "One Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s条评论"
+msgstr[1] ""
+
+#: ../comments.php:22
+msgid "No comment yet"
+msgstr "暂无评论"
+
+#: ../comments.php:35
+msgid "Name"
+msgstr "姓名"
+
+#: ../comments.php:49
+msgid "Email"
+msgstr "邮箱"
+
+#: ../comments.php:58
+msgid "Website"
+msgstr "网站"
+
+#: ../comments.php:65
+#, php-format
+msgid "Required fields are marked %s"
+msgstr "带%s为必填"
+
+#: ../comments.php:73
+msgctxt "noun"
+msgid "Comment"
+msgstr "评论"
+
+#: ../comments.php:80
+msgid "Your email address will not be published."
+msgstr "邮箱地址不会被公布"
+
+#: ../comments.php:84
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this "
+"account\">Log out?</a>"
+msgstr "已登陆为<a href=\"%1$s\">%2$s</a>(<a href=\"%3$s\" title=\"退出登陆\">退出登陆</a>)"
+
+#: ../comments.php:120
+msgid "Commenting on this post are closed"
+msgstr "评论功能被关闭"
+
+#: ../content-none.php:3
+msgid "Nothing Found"
+msgstr "没找到符合要求的内容"
+
+#: ../content-none.php:9
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备好发布你的第一篇博客了吗？<a href=\"%1$s\">点击这里开始</a>。"
+
+#: ../content-none.php:15
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "对不起，没有符合条件的搜索结果。请重试或尝试其它关键字进行搜索。"
+
+#: ../content-none.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "您请求的内容似乎不在这里，建议试一下搜索功能或许能找到。"
+
+#: ../content.php:6
+msgctxt "used before post titles"
+msgid "Featured"
+msgstr "置顶"
+
+#: ../content.php:13
+msgctxt "used before post titles"
+msgid "Protected"
+msgstr "加密"
+
+#: ../content.php:18
+msgctxt "used before post titles"
+msgid "Standard"
+msgstr "标准"
+
+#: ../content.php:23
+msgid "aside"
+msgstr "日志"
+
+#: ../content.php:27
+msgid "gallery"
+msgstr "相册"
+
+#: ../content.php:31
+msgid "link"
+msgstr "链接"
+
+#: ../content.php:35
+msgid "image"
+msgstr "图片"
+
+#: ../content.php:39
+msgid "quote"
+msgstr "引用"
+
+#: ../content.php:43
+msgid "status"
+msgstr "状态"
+
+#: ../content.php:47
+msgid "video"
+msgstr "视频"
+
+#: ../content.php:51
+msgid "audio"
+msgstr "音频"
+
+#: ../content.php:55
+msgid "chat"
+msgstr "对话"
+
+#: ../footer.php:5
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: ../footer.php:5
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "本站由%s驱动"
+
+#. Theme URI of the theme
+#: ../footer.php:7
+msgid "http://lichifeng.com/"
+msgstr "http://lichifeng.com/"
+
+#: ../footer.php:7
+#, php-format
+msgid "Using %s theme"
+msgstr "使用%s主题"
+
+#: ../functions.php:71
+msgid "Header Menu"
+msgstr "主菜单"
+
+#: ../functions.php:90
+msgid "Continue to read the full content"
+msgstr "— 阅读全文 —"
+
+#: ../functions.php:124
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: ../functions.php:129
+#, php-format
+msgid ""
+"Posted in: %4$s by <span class=\"author\">%1$s</span> <span class=\"posted-"
+"on\">%2$s</span> | Tags: %3$s"
+msgstr ""
+"由<span class=\"author\">%1$s</span>于<span class=\"posted-"
+"on\">%2$s</span>发布于：%4$s | 标签：%3$s"
+
+#. translators: 1: date, 2: time
+#: ../functions.php:193
+msgid "(Edit)"
+msgstr "(编辑)"
+
+#: ../functions.php:195
+msgid "Your comment is awaiting moderation."
+msgstr "该评论正待审核。"
+
+#: ../functions.php:227
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr "这是一篇采用了密码保护的内容。请在下方输入密码进行查看："
+
+#: ../functions.php:228 ../functions.php:231
+msgid "Password:"
+msgstr "密码："
+
+#: ../functions.php:234
+msgid "Submit"
+msgstr "提交"
+
+#: ../functions.php:270
+msgid "&laquo; Previous"
+msgstr "&laquo;"
+
+#: ../functions.php:271
+msgid "Next &raquo;"
+msgstr "&raquo;"
+
+#: ../functions.php:356
+msgid "(current)"
+msgstr "(当前页)"
+
+#: ../index-nav.php:21
+msgid "Toggle navigation"
+msgstr "展开导航菜单"
+
+#: ../searchform.php:3
+msgid "Search"
+msgstr "搜索"
+
+#. Name of the theme
+msgid "Goule"
+msgstr "Goule"
 
 #. Author of the theme
 msgid "lichifeng"

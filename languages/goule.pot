@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Goule\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu Feb 25 2016 22:25:47 GMT+0800 (CST)\n"
-"POT-Revision-Date: Mon Feb 29 2016 11:25:09 GMT+0800\n"
+"POT-Revision-Date: Fri Apr 01 2016 13:58:35 GMT+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,126 +28,32 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: /archive.php:20
+#: ../archive.php:20
 msgid "Browse by Tags"
 msgstr ""
 
-#: /archive.php:51
+#: ../archive.php:51
 msgid "Browse by Categorys"
 msgstr ""
 
-#: /archive.php:74
+#: ../archive.php:74
 #, php-format
 msgid "View all posts in %s"
 msgstr ""
 
-#: /archive.php:94
+#: ../archive.php:94
 msgid "Browse by Date"
 msgstr ""
 
-#: /archive.php:118
+#: ../archive.php:118
 msgid "Page list"
 msgstr ""
 
-#: /archive.php:147
+#: ../archive.php:147
 msgid "Attachment list"
 msgstr ""
 
-#: /searchform.php:3
-msgid "Search"
-msgstr ""
-
-#: /content-none.php:3
-msgid "Nothing Found"
-msgstr ""
-
-#: /content-none.php:9
-#, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: /content-none.php:15
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: /content-none.php:20
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: /footer.php:5
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: /footer.php:5
-#, php-format
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: /footer.php:7
-msgid "https://lichifeng.com/"
-msgstr ""
-
-#: /footer.php:7
-#, php-format
-msgid "Using %s theme"
-msgstr ""
-
-#: /content.php:6
-msgctxt "used before post titles"
-msgid "Featured"
-msgstr ""
-
-#: /content.php:13
-msgctxt "used before post titles"
-msgid "Protected"
-msgstr ""
-
-#: /content.php:18
-msgctxt "used before post titles"
-msgid "Standard"
-msgstr ""
-
-#: /content.php:23
-msgid "aside"
-msgstr ""
-
-#: /content.php:27
-msgid "gallery"
-msgstr ""
-
-#: /content.php:31
-msgid "link"
-msgstr ""
-
-#: /content.php:35
-msgid "image"
-msgstr ""
-
-#: /content.php:39
-msgid "quote"
-msgstr ""
-
-#: /content.php:43
-msgid "status"
-msgstr ""
-
-#: /content.php:47
-msgid "video"
-msgstr ""
-
-#: /content.php:51
-msgid "audio"
-msgstr ""
-
-#: /content.php:55
-msgid "chat"
-msgstr ""
-
-#: /comments.php:13
+#: ../comments.php:13
 #, php-format
 msgctxt "comments title"
 msgid "One Comment"
@@ -155,61 +61,152 @@ msgid_plural "%s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: /comments.php:22
+#: ../comments.php:22
 msgid "No comment yet"
 msgstr ""
 
-#: /comments.php:35
+#: ../comments.php:35
 msgid "Name"
 msgstr ""
 
-#: /comments.php:49
+#: ../comments.php:49
 msgid "Email"
 msgstr ""
 
-#: /comments.php:58
+#: ../comments.php:58
 msgid "Website"
 msgstr ""
 
-#: /comments.php:65
+#: ../comments.php:65
 #, php-format
 msgid "Required fields are marked %s"
 msgstr ""
 
-#: /comments.php:73
+#: ../comments.php:73
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: /comments.php:80
+#: ../comments.php:80
 msgid "Your email address will not be published."
 msgstr ""
 
-#: /comments.php:84
+#: ../comments.php:84
 #, php-format
 msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this "
 "account\">Log out?</a>"
 msgstr ""
 
-#: /comments.php:120
+#: ../comments.php:120
 msgid "Commenting on this post are closed"
 msgstr ""
 
-#: /functions.php:71
+#: ../content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: ../content-none.php:9
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../content-none.php:15
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../content-none.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../content.php:6
+msgctxt "used before post titles"
+msgid "Featured"
+msgstr ""
+
+#: ../content.php:13
+msgctxt "used before post titles"
+msgid "Protected"
+msgstr ""
+
+#: ../content.php:18
+msgctxt "used before post titles"
+msgid "Standard"
+msgstr ""
+
+#: ../content.php:23
+msgid "aside"
+msgstr ""
+
+#: ../content.php:27
+msgid "gallery"
+msgstr ""
+
+#: ../content.php:31
+msgid "link"
+msgstr ""
+
+#: ../content.php:35
+msgid "image"
+msgstr ""
+
+#: ../content.php:39
+msgid "quote"
+msgstr ""
+
+#: ../content.php:43
+msgid "status"
+msgstr ""
+
+#: ../content.php:47
+msgid "video"
+msgstr ""
+
+#: ../content.php:51
+msgid "audio"
+msgstr ""
+
+#: ../content.php:55
+msgid "chat"
+msgstr ""
+
+#: ../footer.php:5
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../footer.php:5
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. Theme URI of the theme
+#: ../footer.php:7
+msgid "http://lichifeng.com/"
+msgstr ""
+
+#: ../footer.php:7
+#, php-format
+msgid "Using %s theme"
+msgstr ""
+
+#: ../functions.php:71
 msgid "Header Menu"
 msgstr ""
 
-#: /functions.php:90
+#: ../functions.php:90
 msgid "Continue to read the full content"
 msgstr ""
 
-#: /functions.php:124
+#: ../functions.php:124
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ""
 
-#: /functions.php:129
+#: ../functions.php:129
 #, php-format
 msgid ""
 "Posted in: %4$s by <span class=\"author\">%1$s</span> <span class=\"posted-"
@@ -217,42 +214,46 @@ msgid ""
 msgstr ""
 
 #. translators: 1: date, 2: time
-#: /functions.php:193
+#: ../functions.php:193
 msgid "(Edit)"
 msgstr ""
 
-#: /functions.php:195
+#: ../functions.php:195
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: /functions.php:227
+#: ../functions.php:227
 msgid ""
 "This content is password protected. To view it please enter your password "
 "below:"
 msgstr ""
 
-#: /functions.php:228 /functions.php:231
+#: ../functions.php:228 ../functions.php:231
 msgid "Password:"
 msgstr ""
 
-#: /functions.php:234
+#: ../functions.php:234
 msgid "Submit"
 msgstr ""
 
-#: /functions.php:270
+#: ../functions.php:270
 msgid "&laquo; Previous"
 msgstr ""
 
-#: /functions.php:271
+#: ../functions.php:271
 msgid "Next &raquo;"
 msgstr ""
 
-#: /functions.php:356
+#: ../functions.php:356
 msgid "(current)"
 msgstr ""
 
-#: /index-nav.php:21
+#: ../index-nav.php:21
 msgid "Toggle navigation"
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Search"
 msgstr ""
 
 #. Name of the theme
@@ -260,7 +261,7 @@ msgid "Goule"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "http://lichifeng.com/"
+msgid "http://lichifeng.com/goule"
 msgstr ""
 
 #. Description of the theme
@@ -273,7 +274,7 @@ msgid ""
 "design now a days, this theme will be an answer.Goule is now delivered with "
 "English(US) and Simplified Chinese translations, more translations are "
 "welcomed. Live Demo and Detailed Documentations can be found at http:"
-"//lichifeng.com/"
+"//lichifeng.com/goule"
 msgstr ""
 
 #. Author of the theme
