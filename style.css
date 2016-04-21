@@ -130,7 +130,7 @@ blockquote {
 }
 
 #comments, #main {
-    margin: auto 40px 2em;
+    margin: auto 1.2em 2em;
     padding: 0;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -148,6 +148,28 @@ blockquote {
     font-family: 微软雅黑, sans-serif;
     line-height: 1.2;
     display: table-cell;
+}
+
+.status-footer {
+    font-size: 12px;
+    color: #999;
+}
+
+.status-footer a {
+    color: #999;
+}
+
+a.status-fixed {
+    color: #337ab7;
+}
+
+.entry-title a {
+    color: #777;
+}
+
+.format-status .thumbnail {
+    max-height: 8em;
+    margin-bottom: 0;
 }
 
 .row.no-gutter {
@@ -375,8 +397,8 @@ ol.children {
     color: #000;
 }
 
-.post {
-    margin-bottom: 2em;
+.article-hr {
+    margin-top: 0.9em;
 }
 
 .alignnone {

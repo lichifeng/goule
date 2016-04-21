@@ -1,5 +1,12 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header entry-header-index">
+<?php
+$classes = array(
+    'panel',
+    'panel-default'
+)
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?>>
+    <header class="panel-heading">
         <?php if (is_sticky() && is_home() && !is_paged()) {
             $post_format_label = 'primary';
             $post_format_icon = 'pushpin';
@@ -67,14 +74,14 @@
                         aria-hidden="true"></span>
                     <?php echo $post_format; ?></span></a></div>
 
-        <?php the_title(sprintf('<h3 class="entry-title"><a href="%s" rel="bookmark">',
+        <?php the_title(sprintf('<div class="entry-title"><a href="%s" rel="bookmark">',
                                 esc_url(get_permalink())
                         ),
-                        '</a></h3>'
+                        '</a></div>'
         ); ?>
     </header><!-- .entry-header -->
     <?php if( !(is_sticky() && is_home() && !is_paged() )): ?>
-    <div class="entry-content">
+    <div class="entry-content panel-body">
 
         <?php
         if (has_post_thumbnail()) {

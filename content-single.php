@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header row no-gutter">
-        <?php the_title('<h3 class="entry-title col-xs-9">', '</h3>'); ?>
+        <h3 class="entry-title col-xs-9"><?php the_title(); ?></h3>
         <h3 class="col-xs-1 col-xs-offset-2 text-right entry-title-buttons">
             <a class="col-xs-6 col-md-4 col-md-offset-4" href="<?php echo esc_url(home_url()); ?>"><span
                     class="glyphicon glyphicon-home"

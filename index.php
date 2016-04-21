@@ -8,7 +8,25 @@ get_header(); ?>
 
         <main id="main">
 
-            <?php if (have_posts()) :
+            <?php
+                # remove this section if you dont want status post be excluded.
+                if(is_home()) {
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $q_args = array(
+                        'paged' => $paged,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'post_format',
+                                'field' => 'slug',
+                                'terms' => array( 'post-format-status' ),
+                                'operator' => 'NOT IN'
+                            )
+                        )
+                    );
+                    query_posts( $q_args );
+                }
+
+                if (have_posts()) :
 
                 // Start the loop.
                 while (have_posts()) : the_post();
