@@ -62,9 +62,9 @@ add_action('after_setup_theme', 'goule_setup');
 
 // Register navigation menu
 // header-menu is located under your Blogname
-if (!function_exists('register_goule_menus')) :
+if (!function_exists('goule_register_menus')) :
 
-    function register_goule_menus()
+    function goule_register_menus()
     {
         register_nav_menus(
             array(
@@ -73,7 +73,7 @@ if (!function_exists('register_goule_menus')) :
         );
     }
 endif;
-add_action('init', 'register_goule_menus');
+add_action('init', 'goule_register_menus');
 
 
 if (!isset ($content_width)) {
@@ -82,22 +82,16 @@ if (!isset ($content_width)) {
 
 // Add bootstrap style to default Readmore link
 // Feel free to modify
-add_filter('the_content_more_link', 'modify_read_more_link');
-if (!function_exists('modify_read_more_link')) :
+add_filter('the_content_more_link', 'goule_modify_read_more_link');
+if (!function_exists('goule_modify_read_more_link')) :
 
-    function modify_read_more_link()
+    function goule_modify_read_more_link()
     {
         return '<div class="text-center"><a class="more-link btn btn-default btn-sm" href="' . get_permalink() . '">' . esc_html__('Continue to read the full content',
             'goule') . '</a></div>';
     }
 endif;
 
-// Recommended way to enqueue scripts and styles
-// Here uses local bootstrap stylesheets and scripts
-// It's recommended to replace them with a public CDN
-// For users from China( where google resources are blocked ),
-// a detailed guide for optimizing GoogleFonts and Bootstrap
-// can be found in readme.txt or here: http://lichifeng.com
 if (!function_exists('goule_scripts')) :
 
     function goule_scripts()
@@ -107,12 +101,21 @@ if (!function_exists('goule_scripts')) :
         wp_enqueue_style('title-font', 'http://fonts.googleapis.com/css?family=Milonga');
         wp_register_script( 'bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), false, true );
         wp_enqueue_script( 'bootstrap-script' );
+        //wp_enqueue_script('goule_script', get_template_directory_uri() . '/goule_script.js', array(), false, true);
         if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
         }
     }
 endif;
 add_action('wp_enqueue_scripts', 'goule_scripts');
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function goule_add_editor_styles() {
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'admin_init', 'goule_add_editor_styles');
 
 // Prints HTML with meta information for the categories, tags
 if (!function_exists('goule_entry_meta')) :
@@ -137,10 +140,10 @@ if (!function_exists('goule_entry_meta')) :
 endif;
 
 // This filter will fix a overflow problem caused by embedded videos
-add_filter('embed_oembed_html', 'custom_oembed_filter', 10, 4);
-if (!function_exists('custom_oembed_filter')) :
+add_filter('embed_oembed_html', 'goule_custom_oembed_filter', 10, 4);
+if (!function_exists('goule_custom_oembed_filter')) :
 
-    function custom_oembed_filter($html, $url, $attr, $post_ID)
+    function goule_custom_oembed_filter($html, $url, $attr, $post_ID)
     {
         $return = '<div class="video-container">' . $html . '</div>';
         return $return;
@@ -148,8 +151,8 @@ if (!function_exists('custom_oembed_filter')) :
 endif;
 
 // Used for better integration with Bootstrap
-if (!function_exists('mytheme_comment')) :
-    function mytheme_comment(
+if (!function_exists('goule_comment')) :
+    function goule_comment(
         $comment,
         $args,
         $depth
@@ -183,7 +186,7 @@ if (!function_exists('mytheme_comment')) :
             <div class="col-xs-12 col-md-11">
                 <div class="row no-gutter">
                     <div class="comment-meta">
-                        <?php printf('<span class="fn">%s</span> <span class="comment-author-bullet">•</span>',
+                        <?php printf('<span class="fn">%s</span>&nbsp;<span class="comment-author-bullet">&bull;</span>',
                             get_comment_author_link()); ?>
 
                         <?php
@@ -217,9 +220,9 @@ if (!function_exists('mytheme_comment')) :
 endif;
 
 // Used for better integration with Bootstrap
-add_filter('the_password_form', 'custom_password_form');
-if (!function_exists('custom_password_form')) :
-    function custom_password_form()
+add_filter('the_password_form', 'goule_password_form');
+if (!function_exists('goule_password_form')) :
+    function goule_password_form()
     {
         global $post;
         $label = 'pwbox-' . (empty($post->ID) ? rand() : $post->ID);
@@ -239,13 +242,14 @@ if (!function_exists('custom_password_form')) :
     }
 endif;
 
-if (!function_exists('theme_paginate_links')) :
-    function theme_paginate_links($args = '')
+if (!function_exists('goule_paginate_links')) :
+    function goule_paginate_links($args = '')
     {
         global $wp_query, $wp_rewrite;
 
         // Setting up default values based on the current URL.
-        $pagenum_link = html_entity_decode(get_pagenum_link());
+        //$pagenum_link = html_entity_decode(get_pagenum_link());
+        $pagenum_link = wp_kses_post(get_pagenum_link());
         $url_parts = explode('?', $pagenum_link);
 
         // Get max pages and current page out of the current query, if available.
@@ -312,7 +316,7 @@ if (!function_exists('theme_paginate_links')) :
         // Who knows what else people pass in $args
         $total = (int)$args['total'];
         if ($total < 2) {
-            return;
+            return false;
         }
         $current = (int)$args['current'];
         $end_size = (int)$args['end_size']; // Out of bounds?  Make it the default.
@@ -418,13 +422,13 @@ if (!function_exists('theme_paginate_links')) :
     }
 endif;
 
-if (!function_exists('theme_paginate_comments_links')) :
-    function theme_paginate_comments_links($args = array())
+if (!function_exists('goule_paginate_comments_links')) :
+    function goule_paginate_comments_links($args = array())
     {
         global $wp_rewrite;
 
         if (!is_singular()) {
-            return;
+            return false;
         }
 
         $page = get_query_var('cpage');
@@ -446,12 +450,14 @@ if (!function_exists('theme_paginate_comments_links')) :
         }
 
         $args = wp_parse_args($args, $defaults);
-        $page_links = theme_paginate_links($args);
+        $page_links = goule_paginate_links($args);
 
         if ($args['echo']) {
             echo $page_links;
         } else {
             return $page_links;
         }
+
+        return false;
     }
 endif;

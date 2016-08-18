@@ -1,0 +1,8 @@
+# Change Log
+All notable changes to this theme will be documented in this file.
+
+## [1.0.2] - 2016-08-18
+### Fixed
+- Multi-level navbar is not working properly.
+### Added
+- 'Front Page' now has a navbar.

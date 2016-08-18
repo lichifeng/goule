@@ -1,4 +1,4 @@
-=== Goule ===
+=== Goule 1.0.2 ===
 
 Theme author: lichifeng
 Requires at least: 4.4.2 (Lower versions of WordPress may work fine, but they are not tested.)
@@ -15,11 +15,6 @@ structure which makes it compatible with all kinds of screens.
 
 Goule is a paper-like and responsive wordpress theme built with Bootstrap framework. It's designed with blog content always on the center-stage. Simple yet elegant structure gives it excellent compatibility with all kinds of screens. It comes with most basic elements a small blog site needs and nothing more. For those who complains about bloated and over-decorated web design now a days, this theme will be an answer. Goule is now delivered with English(US) and Simplified Chinese translations, more translations are welcomed.
 
-== Installation ==
-1. Download the .zip file from https://github.com/lichifeng/goule (This step can be skipped if you install the theme through WordPress theme directory)
-1. Upload the theme directory(goule/) to the `/wp-content/themes/` directory, or install the theme through 'Appearance -> Add New'
-1. Activate the theme through the 'Appearance' screen in WordPress
-
 == Frequently Asked Questions ==
 
 = Does Goule need any configuration? =
@@ -32,4 +27,6 @@ Goule is delivered with bootstrap stylesheets and scripts, but it's recommended 
 
 = How to add Glyphicons to navigation menus =
 
-Goule uses wp-bootstrap-navwalker for better integration with bootstrap. Some cool functions (Glyphicons included) is provideo a custom navwalker. More details can be found here: https://github.com/twittem/wp-bootstrap-navwalker
+Goule uses wp-bootstrap-navwalker for better integration with bootstrap. Some cool functions (Glyphicons included) is provided.
+To add an Icon to your link simple place the Glyphicon class name in the links Title Attribute field and the class will do the rest. IE glyphicon-bullhorn.
+More details can be found here: https://github.com/twittem/wp-bootstrap-navwalker

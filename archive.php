@@ -167,8 +167,7 @@ get_header();
                                 );
                                 ?>
                                 <div class="col-xs-4">
-                                    <a href="<?php echo $attachment_page; ?>"><?php echo get_the_title($attachment->ID
-                                        ); ?></a>
+                                    <a href="<?php echo $attachment_page; ?>"><?php echo esc_html(get_the_title($attachment->ID)); ?></a>
                                 </div>
                                 <?php
                             }
@@ -213,7 +212,7 @@ get_header();
                 )
                 ?>
                 <nav class="wp-pagenavi">
-                        <?php echo theme_paginate_links($pagination_args); ?>
+                        <?php echo goule_paginate_links($pagination_args); ?>
                 </nav>
 
             </main><!-- .site-main -->

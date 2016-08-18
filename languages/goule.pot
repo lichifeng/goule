@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Goule\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu Feb 25 2016 22:25:47 GMT+0800 (CST)\n"
-"POT-Revision-Date: Fri Apr 01 2016 13:58:35 GMT+0800\n"
+"POT-Revision-Date: Thu Aug 18 2016 22:58:01 GMT+0800 (CST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -201,12 +201,12 @@ msgstr ""
 msgid "Continue to read the full content"
 msgstr ""
 
-#: ../functions.php:124
+#: ../functions.php:127
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ""
 
-#: ../functions.php:129
+#: ../functions.php:132
 #, php-format
 msgid ""
 "Posted in: %4$s by <span class=\"author\">%1$s</span> <span class=\"posted-"
@@ -214,37 +214,37 @@ msgid ""
 msgstr ""
 
 #. translators: 1: date, 2: time
-#: ../functions.php:193
+#: ../functions.php:196
 msgid "(Edit)"
 msgstr ""
 
-#: ../functions.php:195
+#: ../functions.php:198
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:227
+#: ../functions.php:230
 msgid ""
 "This content is password protected. To view it please enter your password "
 "below:"
 msgstr ""
 
-#: ../functions.php:228 ../functions.php:231
+#: ../functions.php:231 ../functions.php:234
 msgid "Password:"
 msgstr ""
 
-#: ../functions.php:234
+#: ../functions.php:237
 msgid "Submit"
 msgstr ""
 
-#: ../functions.php:270
+#: ../functions.php:274
 msgid "&laquo; Previous"
 msgstr ""
 
-#: ../functions.php:271
+#: ../functions.php:275
 msgid "Next &raquo;"
 msgstr ""
 
-#: ../functions.php:356
+#: ../functions.php:360
 msgid "(current)"
 msgstr ""
 
@@ -271,10 +271,9 @@ msgid ""
 "Simple yet elegant structure gives it excellent compatibility with all kinds "
 "of screens. It comes with most basic elements a small blog site needs and "
 "nothing more. For those who complains about bloated and over-decorated web "
-"design now a days, this theme will be an answer.Goule is now delivered with "
+"design now a days, this theme will be an answer. Goule is now delivered with "
 "English(US) and Simplified Chinese translations, more translations are "
-"welcomed. Live Demo and Detailed Documentations can be found at http:"
-"//lichifeng.com/goule"
+"welcomed. Detailed information can be found at http://lichifeng.com/goule"
 msgstr ""
 
 #. Author of the theme

@@ -36,7 +36,7 @@ get_header(); ?>
             )
             ?>
             <nav class="wp-pagenavi">
-                    <?php echo theme_paginate_links($pagination_args); ?>
+                    <?php echo goule_paginate_links($pagination_args); ?>
             </nav>
 
         </main><!-- .site-main -->
