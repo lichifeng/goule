@@ -2,6 +2,10 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+    <?php if (is_page() && is_front_page()): ?>
+        <?php get_template_part('index', 'nav'); ?>
+    <?php endif; ?>
+
     <main id="main" class="site-main" role="main">
         <?php
         // Start the loop.
@@ -19,7 +23,7 @@ get_header(); ?>
 
 
 <?php
-if (comments_open() || get_comments_number()) :
+if ((comments_open() || get_comments_number()) && !is_front_page()) :
     comments_template();
 endif;
 ?>

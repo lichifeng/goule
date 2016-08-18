@@ -3,11 +3,11 @@ Theme Name: Goule
 Theme URI: http://lichifeng.com/goule
 Author: lichifeng
 Author URI: http://lichifeng.com/
-Description: Goule is a paper-like and responsive wordpress theme built with Bootstrap framework. It's designed with blog content always on the center-stage. Simple yet elegant structure gives it excellent compatibility with all kinds of screens. It comes with most basic elements a small blog site needs and nothing more. For those who complains about bloated and over-decorated web design now a days, this theme will be an answer.Goule is now delivered with English(US) and Simplified Chinese translations, more translations are welcomed. Live Demo and Detailed Documentations can be found at http://lichifeng.com/goule
+Description: Goule is a paper-like and responsive wordpress theme built with Bootstrap framework. It's designed with blog content always on the center-stage. Simple yet elegant structure gives it excellent compatibility with all kinds of screens. It comes with most basic elements a small blog site needs and nothing more. For those who complains about bloated and over-decorated web design now a days, this theme will be an answer. Goule is now delivered with English(US) and Simplified Chinese translations, more translations are welcomed. Detailed information can be found at http://lichifeng.com/goule
 Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: light, white, one-column, fluid-layout, featured-image-header, featured-images, sticky-post
+Tags: one-column, featured-images, sticky-post, post-formats, blog, responsive-layout
 Text Domain: goule
 */
 
@@ -618,4 +618,41 @@ and (max-width: 800px) {
         margin-left: auto !important;
         box-shadow: none !important;
     }
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
 }

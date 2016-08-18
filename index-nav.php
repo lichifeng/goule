@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-12 site-nav-upper text-center">
             <h1>
-                <a href="<?php echo esc_url(home_url()); ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
                     <?php bloginfo('name'); ?></a>
             </h1>
         </div>
@@ -28,7 +28,7 @@
                     wp_nav_menu(array(
                             'theme_location' => 'header-menu',
                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                            'depth' => 2,
+                            'depth' => 5,
                             'container' => 'div',
                             'menu_class' => 'nav navbar-nav',
 

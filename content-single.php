@@ -2,7 +2,7 @@
     <header class="entry-header row no-gutter">
         <h3 class="entry-title col-xs-9"><?php the_title(); ?></h3>
         <h3 class="col-xs-1 col-xs-offset-2 text-right entry-title-buttons">
-            <a class="col-xs-6 col-md-4 col-md-offset-4" href="<?php echo esc_url(home_url()); ?>"><span
+            <a class="col-xs-6 col-md-4 col-md-offset-4" href="<?php echo esc_url(home_url('/')); ?>"><span
                     class="glyphicon glyphicon-home"
                     aria-hidden="true"></span></a>
         </h3>
@@ -12,6 +12,8 @@
         <?php goule_entry_meta(); ?>
     </footer><!-- .entry-footer -->
     <?php endif; ?>
+
+
 
     <div class="entry-content">
         <?php

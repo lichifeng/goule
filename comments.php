@@ -92,7 +92,7 @@ if (post_password_required()) {
                                      'style'       => 'ol',
                                      'short_ping'  => true,
                                      'avatar_size' => 50,
-                                     'callback'    => 'mytheme_comment',
+                                     'callback'    => 'goule_comment',
                                  )
                 );
                 ?>
@@ -111,7 +111,7 @@ if (post_password_required()) {
                         'type'      => 'list',
                         'nav_size'  => 'small',
                     );
-                    echo theme_paginate_comments_links($pagination_args);
+                    echo goule_paginate_comments_links($pagination_args);
                     ?>
                 </nav><!-- .comment-navigation -->
             <?php endif; // Check for comment navigation ?>
