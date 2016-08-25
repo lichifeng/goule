@@ -1,10 +1,14 @@
 <?php
-// Register Custom Navigation Walker
-// More detail about this project can be found here:
-// https://github.com/twittem/wp-bootstrap-navwalker
+/**
+ * Register Custom Navigation Walker
+ * More detail about this project can be found here:
+ * https://github.com/twittem/wp-bootstrap-navwalker
+ */
 require_once('wp_bootstrap_navwalker.php');
 
-// Setup function
+/**
+ * Setup function
+ */
 if (!function_exists('goule_setup')) :
     function goule_setup()
     {
@@ -63,7 +67,6 @@ add_action('after_setup_theme', 'goule_setup');
 // Register navigation menu
 // header-menu is located under your Blogname
 if (!function_exists('goule_register_menus')) :
-
     function goule_register_menus()
     {
         register_nav_menus(
@@ -98,9 +101,15 @@ if (!function_exists('goule_scripts')) :
     {
         wp_enqueue_style('goule-style', get_stylesheet_uri());
         wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
+        wp_enqueue_style('bootstrap-smartmenus', get_template_directory_uri() . '/bootstrap/plugins/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css');
         wp_enqueue_style('title-font', 'http://fonts.googleapis.com/css?family=Milonga');
         wp_register_script( 'bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), false, true );
+        wp_register_script( 'bootstrap-smartmenus-basejs', get_template_directory_uri() . '/bootstrap/plugins/smartmenus/jquery.smartmenus.min.js', array(), false, true );
+        wp_register_script( 'bootstrap-smartmenus-js', get_template_directory_uri() . '/bootstrap/plugins/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.min.js', array(), false, true );
+
         wp_enqueue_script( 'bootstrap-script' );
+        wp_enqueue_script( 'bootstrap-smartmenus-basejs' );
+        wp_enqueue_script( 'bootstrap-smartmenus-js' );
         //wp_enqueue_script('goule_script', get_template_directory_uri() . '/goule_script.js', array(), false, true);
         if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');

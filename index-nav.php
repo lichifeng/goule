@@ -11,7 +11,7 @@
                     <?php bloginfo('name'); ?></a>
             </h1>
         </div>
-        <div class="col-md-12 site-nav-lower text-center">
+        <div class="col-md-12 site-nav-lower">
             <div class="navbar">
                 <div class="container-fluid">
                     <div class="navbar-header">
